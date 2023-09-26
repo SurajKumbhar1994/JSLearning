@@ -47,6 +47,51 @@ var lengthBeforeTrim = str.length;
 console.log("Length before trim : ", str.length);
 var result = str.trim();
 console.log("Length after trim: ", result.length);
-var lengthAfterTrim = result.length;
+var lengthAfterTrim = str.length;
 var result = lengthBeforeTrim - lengthAfterTrim;
 console.log('Removed extra spaces are: ', result);
+
+console.log("========== includes() =============== ");
+var result = greet.includes('Morning');
+console.log("Is Morning word available: ", result);
+var result = greet.includes('nin');
+console.log("Is nin word available: ", result);
+var result = greet.includes('good');
+console.log("Is good word available: ", result);
+
+console.log("========== search() =============== ");
+var greet = "Good Morning";
+var result = greet.search('orn');
+console.log(result);
+var result = greet.search('after');
+console.log(result);
+
+console.log("========== slice() =============== ");
+var greet = 'Hello Good Morning!';
+var result = greet.slice(6);
+console.log(result);
+var result = greet.slice(6, 10);
+console.log(result);
+
+console.log("========== split() =============== ");
+var result = greet.split(" ");
+console.log(result);
+
+//WAP to count the total number words
+var str = "I am UI Developer";
+var words = str.split(" ");
+console.log(words);
+console.log('Total words is: ', words.length);
+console.log(`Total words is: ${words.length}`);
+// console.log(typeof words);
+
+
+//string template
+console.log(` I am "UI" Developer`);
+var n1=10;
+var n2=39;
+var result = n1+n2;
+console.log("Addition of",n1,"and",n2,"is :",result);
+console.log(`Addition of ${n1} and ${n2} is: ${result}`);
+
+

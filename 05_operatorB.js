@@ -11,7 +11,6 @@ function isEvenOrOdd(num) {
     var result = num % 2 === 0 ? 'Even' : 'Odd';
     return result;
 }
-
 var num1Result = isEvenOrOdd(29);
 console.log(`The number 29 is ${num1Result}`);
 var num2Result = isEvenOrOdd(44);
